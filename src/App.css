@@ -1,38 +1,145 @@
+body {
+  /* height: 100vh;
+  width: 100vw; */
+  /* #0c8d75 */
+  /* #009688 */
+  /* #e5dcdc */
+}
+
 .App {
+  height: 100vh;
+  width: 100vw;
+  background-color: #e5dcdc;
+}
+
+.logo-header {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-container {
+  background-color: #f7f0ffe6;
+  width: 25vw;
+  height: 40vh;
+  border-radius: 15px;
+  margin-top: -10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.logo {
+  width: 75%;
+  padding-top: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-login {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-top: 250px;
+}
+
+.login-container {
+  background-color: #f7f0ffe6;
+  width: 25vw;
+  height: 40vh;
+  border-radius: 15px;
+}
+
+.login-header {
+  height: 25%;
+}
+
+.login-header span {
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  font-size: larger;
+}
+
+.login-input {
+  display: flex;
+  justify-content: left;
+  margin: 10px;
+  padding-left: 25px;
+}
+
+.login-input, input {
+  border-radius: 3px;
+  height: 30px;
+  width: 85%;
+  border: 0px solid;
+}
+.login-input-span {
+  width: 50%;
+  font-size: small;
+  color: #700f08;
+}
+
+.checkbox {
+  width: 15px;
+  height: 15px;
+}
+
+input[type="checkbox"]:checked + label::after {
+  content: '';
+  position: absolute;
+  width: 1.2ex;
+  height: 0.4ex;
+  background: rgba(0, 0, 0, 0);
+  top: 0.9ex;
+  left: 0.4ex;
+  border: 3px solid #700f08;
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+input[type="checkbox"] {
+  line-height: 2.1ex;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+   position: absolute;
+   left: -999em;
+}
+
+input[type="checkbox"] + label {
+   position: relative;
+   overflow: hidden;
+   cursor: pointer;
+}
+
+input[type="checkbox"] + label::before {
+  content: "";
+  display: inline-block;
+  vertical-align: -25%;
+  height: 2ex;
+  width: 2ex;
+  background-color: white;
+  border: 1px solid rgb(166, 166, 166);
+  border-radius: 4px;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.25);
+  margin-right: 0.5em;
+}
+
+.login-btn {
+  background-color: #700f08;
+  width: 85%;
+  border-radius: 15px;
+  border: 0px solid;
+  font-size: medium;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer {
+  height: 45px;
+  position: relative;
+  bottom: -75px;
+  background-color: #700f08;
 }
