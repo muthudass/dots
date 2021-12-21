@@ -12,6 +12,7 @@ li {
     top: 100px;
     position: fixed;
     color: black;
+    z-index: 1;
 }
 
 .side-menu {
@@ -31,7 +32,7 @@ li {
 .side-menu span span {
     position: relative;
     left: 10px;
-    top: -5px;
+    /* top: -5px; */
 }
 
 .active-side-menu {
@@ -49,8 +50,8 @@ li {
 
 .region-building {
     width: 100px;
-    position: fixed;
-    top: 60px;
+    position: relative;
+    top: 20px;
     left: -10px;
 }
 
@@ -58,6 +59,7 @@ li {
     position: fixed;
     padding: 20px;
     width: 50px;
+    z-index: 999;
 }
 
 .region-dropdown {
@@ -66,7 +68,7 @@ li {
 
 .building-dropdown {
     position: relative;
-    left: 120px;
+    left: 110px;
 }
 
 .dropdown-select {
@@ -76,13 +78,34 @@ li {
     background-color: #e5dcdc;
 }
 
+.dropdown-icon {
+    position: relative;
+    left: -10px;
+    top: 5px;
+}
+
+.dropdown-span-text {
+    position: relative;
+    left: -5px;
+    top: -3px;
+}
+
+.dropdown-values {
+    z-index: 9999;
+    /* background-color: gray; */
+}
+
+.dropdown-values a {
+    z-index: 9999;
+}
+
 .dashboard-container {
     background-color: white;
     height: 95vh;
     width: 80vw;
     float: right;
     border-radius: 15px;
-    position: relative;
+    position: fixed;
     top: 15px;
     right: 12px;
 }
@@ -114,7 +137,7 @@ li {
     right: -80px;
 }
 
-.location {
+.dashboard-location {
     float: right;
     position: relative;
     right: 30px;
@@ -123,7 +146,7 @@ li {
     border-right: 1px solid;
 }
 
-.alert {
+.dashboard-alert {
     float: right;
     position: relative;
     right: 130px;
@@ -132,7 +155,7 @@ li {
     border-right: 1px solid;
 }
 
-.home {
+.dashboard-home {
     float: right;
     position: relative;
     right: 230px;

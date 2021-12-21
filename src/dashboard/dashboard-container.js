@@ -11,9 +11,9 @@ export const DashboardContainer = () => {
         <>
         <div className='dashboard-container-top'>
         <span className='dashboard-container-top-title'>Building 1</span>
-        <span className='home'><HomeOutlinedIcon /></span>
-        <span className='alert'><AddAlertOutlinedIcon /></span>
-        <span className='location'><AddLocationOutlinedIcon /></span>
+        <span className='dashboard-home'><HomeOutlinedIcon /></span>
+        <span className='dashboard-alert'><AddAlertOutlinedIcon /></span>
+        <span className='dashboard-location'><AddLocationOutlinedIcon /></span>
             <span className='logout-btn'>Logout</span>
         </div>
             <div className='building-type-dropdown'>

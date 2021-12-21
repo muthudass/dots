@@ -12,6 +12,8 @@ import DeviceThermostatOutlinedIcon from '@mui/icons-material/DeviceThermostatOu
 import MonitorOutlinedIcon from '@mui/icons-material/MonitorOutlined';
 import { useState } from "react";
 import Logo from './images/logo.jpeg';
+import AddLocationOutlinedIcon from '@mui/icons-material/AddLocationOutlined';
+import ApartmentOutlinedIcon from '@mui/icons-material/ApartmentOutlined';
 
 export const Dashboard = () => {
 
@@ -30,16 +32,29 @@ export const Dashboard = () => {
             <div className="dashboard">
                 <img src={Logo} alt='Logo' className='dashboard-logo' />
                 <div className="region-building">
-                    <div className="region-dropdown">
+                    {/* <div className="region-dropdown">
                         <span style={{fontWeight: '500', color: '#700f08'}}>Region</span>
                         <select className="dropdown-select">
-                            <option></option>
+                        <option value="" selected>Region</option>
                             <option>UAE</option>
                             <option>DUBAI</option>
                             <option>JLT</option>
                         </select>
+                    </div> */}
+                    <div className="dropdown">
+                        <button className="btn btn-secondary dropdown-toggle"
+                            type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <AddLocationOutlinedIcon className="dropdown-icon"/> 
+                            <span className="dropdown-span-text">Region</span>
+                        </button>
+                        <div className="dropdown-menu dropdown-values" aria-labelledby="dropdownMenuButton">
+                            <a className="dropdown-item" href="#">UAE</a>
+                            <a className="dropdown-item" href="#">Dubai</a>
+                            <a className="dropdown-item" href="#">JLT</a>
+                        </div>
                     </div>
-                    <div className="building-dropdown">
+                    {/* <div className="building-dropdown">
                         <span style={{fontWeight: '500', color: '#700f08'}}>Buildings</span>
                         <select className="dropdown-select">
                             <option></option>
@@ -47,7 +62,18 @@ export const Dashboard = () => {
                             <option>Marsa Tower</option>
                             <option>City Walk Tower</option>
                         </select>
-                    </div>
+                    </div> */}
+                    <div className="dropdown building-dropdown" style={{maxHeight: '10px !important'}}>
+                            <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <ApartmentOutlinedIcon  className="dropdown-icon"/>
+                                <span className="dropdown-span-text">Building</span>
+                            </button>
+                            <div className="dropdown-menu dropdown-values" aria-labelledby="dropdownMenuButton">
+                                <a className="dropdown-item" href="#">JLT Tower</a>
+                                <a className="dropdown-item" href="#">Marsa Tower</a>
+                                <a className="dropdown-item" href="#">City Walk Tower</a>
+                            </div>
+                        </div>
                 </div>
                 <ul className="side-menu-list">
                     <li><div className={`side-menu ${activeElement === 'plant' ? 'active-side-menu' : ''}`}
