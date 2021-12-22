@@ -10,6 +10,9 @@ body {
   height: 100vh;
   width: 100vw;
   background-color: #e5dcdc;
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
 }
 
 .logo-header {
@@ -76,6 +79,10 @@ body {
   color: #700f08;
 }
 
+.already-member {
+  padding-left: 30px;
+}
+
 .checkbox {
   width: 15px;
   height: 15px;
@@ -87,7 +94,7 @@ input[type="checkbox"]:checked + label::after {
   width: 1.2ex;
   height: 0.4ex;
   background: rgba(0, 0, 0, 0);
-  top: 0.9ex;
+  top: 1.9ex;
   left: 0.4ex;
   border: 3px solid #700f08;
   border-top: none;

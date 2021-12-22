@@ -29,7 +29,7 @@ export const Login = () => {
                     <input type={"checkbox"} checked={true} className='checkbox' />
                     <label> Keep me signed in</label>
                 </span>
-                <span className='login-input-span'>
+                <span className='login-input-span already-member'>
                     Already Member?
                 </span>
             </div>
